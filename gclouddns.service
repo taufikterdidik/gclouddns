@@ -1,0 +1,12 @@
+[Unit]
+Description=GCloudDNS service
+After=network-online.target
+Wants=gclouddns.timer
+
+[Service]
+Type=oneshot
+User=USERNAME_CHANGEME
+ExecStart=/path/to/gclouddns.sh
+
+[Install]
+WantedBy=multi-user.target

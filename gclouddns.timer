@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for GCloudDNS Service
+Requires=gclouddns.service
+
+[Timer]
+Unit=gclouddns.service
+OnCalendar=*-*-* *:0/5
+
+[Install]
+WantedBy=timers.target
