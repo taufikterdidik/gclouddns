@@ -5,7 +5,7 @@ Wants=gclouddns.timer
 
 [Service]
 Type=oneshot
-ExecStart=/path/to/gclouddns.sh -c %i.conf
+ExecStart=/path/to/gclouddns.sh -c %i
 
 [Install]
 WantedBy=multi-user.target

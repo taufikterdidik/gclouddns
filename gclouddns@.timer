@@ -1,6 +1,6 @@
 [Unit]
 Description=Timer for GCloudDNS Service
-Requires=gclouddns.service
+Requires=gclouddns@%i.service
 
 [Timer]
 Unit=gclouddns@%i.service
